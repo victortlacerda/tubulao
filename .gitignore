@@ -1,0 +1,10 @@
+# sistema
+.DS_Store
+Thumbs.db
+# editores
+.vscode/
+.idea/
+# arquivos de trabalho
+*.zip
+__pycache__/
+node_modules/
