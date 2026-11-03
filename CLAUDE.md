@@ -15,6 +15,10 @@ Tudo está em um arquivo, em blocos `<script>` na ordem abaixo (cada módulo com
 
 `figs/pNNN.jpg`: NNN = página do PDF; página do texto = NNN − 4 (001 a 004 = capa e sumário, página 0). Salve em JPG, ~1241×1755 px, qualidade ~72, progressivo. O leitor lista só as páginas que existem em `REFTEXT.pages`.
 
+## Prints do README
+
+`docs/prints/*.jpg` são gerados por `tools/prints.py` (ver o topo do script para instalar KaTeX e as fontes via npm). Refaça os prints quando mudar a aparência ou os números de uma tela mostrada no README e confira as imagens antes do commit.
+
 ## Ao mexer no código
 
 - A página **Validação** tem de continuar toda conferida. Se mudar uma fórmula, confira o motivo antes de mexer nas tolerâncias.

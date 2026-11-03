@@ -1,5 +1,9 @@
 # Histórico de mudanças
 
+## 2026-11-03 (prints)
+
+- README com prints do app (`docs/prints/`): calculadora, esboço, referência, validação e uma segunda calculadora. `tools/prints.py` refaz as imagens.
+
 ## 2026-11-03
 
 - Organiza o repositório: README, CHANGELOG, `CLAUDE.md`, `.gitignore` e o teste de fumaça `tests/smoke.py`.

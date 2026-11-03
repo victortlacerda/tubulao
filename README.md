@@ -4,6 +4,8 @@ Calculadora e referência de **tubulão a céu aberto** (fuste e base alargada),
 
 Cada calculadora gera uma memória de cálculo passo a passo, com as equações do texto, esboço, exemplos e verificações.
 
+![Tubulão a céu aberto: calculadora com os resultados e a memória de cálculo](docs/prints/01-calculadora.jpg)
+
 ## Como usar
 
 Abra o `index.html` no navegador. Não precisa instalar nada nem subir servidor.
@@ -26,12 +28,32 @@ Além das calculadoras:
 - **Figuras da referência:** os desenhos das páginas 55 a 59.
 - **Validação:** a referência não traz exemplo resolvido de tubulão. O app recalcula três casos (fuste, base circular e base em falsa elipse) e compara com um recálculo manual independente, feito direto com as fórmulas (14 resultados).
 
+## Telas do app
+
+**Memória de cálculo com as equações do texto e o esboço do tubulão.**
+
+![Memória de cálculo com as equações do texto e o esboço do tubulão.](docs/prints/02-esboco-memoria.jpg)
+
+**Referência bibliográfica: texto extraído ao lado da página completa do PDF.**
+
+![Referência bibliográfica: texto extraído ao lado da página completa do PDF.](docs/prints/03-referencia.jpg)
+
+**Conferência: o app recalcula os casos de verificação e compara com o recálculo manual.**
+
+![Conferência: o app recalcula os casos de verificação e compara com o recálculo manual.](docs/prints/04-validacao.jpg)
+
+**Base alargada (item 16.3).**
+
+![Base alargada (item 16.3).](docs/prints/05-base-alargada.jpg)
+
 ## Estrutura do repositório
 
 ```
 index.html        app completo: HTML, CSS, JavaScript e dados
 figs/pNNN.jpg     páginas da referência; NNN = página do PDF (página do texto = NNN − 4)
 tests/smoke.py    teste de fumaça (menu, validação e imagens do leitor)
+tools/prints.py   gera os prints de docs/prints/ usados neste README
+docs/prints/      prints do app (JPG)
 CHANGELOG.md      histórico das mudanças
 CLAUDE.md         notas de trabalho para quem for mexer no código
 ```
@@ -46,8 +68,9 @@ CLAUDE.md         notas de trabalho para quem for mexer no código
 
 1. Edite o `index.html` (ele é o app inteiro: ver `CLAUDE.md` para a organização interna).
 2. Rode `python3 tests/smoke.py` (precisa de `pip install playwright` e `playwright install chromium`). A página Validação tem de continuar toda conferida.
-3. Anote a mudança no `CHANGELOG.md`.
-4. Faça o commit e envie: `git add -A && git commit -m "..." && git push`.
+3. Se a tela mudou, refaça os prints: `python3 tools/prints.py` (as instruções de instalação estão no topo do script).
+4. Anote a mudança no `CHANGELOG.md`.
+5. Faça o commit e envie: `git add -A && git commit -m "..." && git push`.
 
 ## Fonte e créditos
 
