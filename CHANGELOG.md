@@ -1,5 +1,9 @@
 # Histórico de mudanças
 
+## 2026-11-06
+
+- Ícone próprio da aba e do histórico do navegador (SVG embutido no `index.html`).
+
 ## 2026-11-03 (prints)
 
 - README com prints do app (`docs/prints/`): calculadora, esboço, referência, validação e uma segunda calculadora. `tools/prints.py` refaz as imagens.
